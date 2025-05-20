@@ -28,34 +28,37 @@ A simple Vue.js ordering system web application that allows users to submit orde
 
 ### 1. Clone the Repository
 
-git clone https://github.com/Drak218/ABC_ordering_system.git
-cd ABC_ordering_system
+- git clone https://github.com/Drak218/ABC_ordering_system.git
+- cd ABC_ordering_system
 
 ###2. Backend Setup (Laravel)
 
-cd ordering_system
-composer install
-cp .env.example .env
-php artisan key:generate
+- cd ordering_system
+- composer install
+- cp .env.example .env
+- php artisan key:generate
 
 - Update your .env file with your database credentials:
-DB_DATABASE=ordering_system_db
-DB_USERNAME=your_db_username
-DB_PASSWORD=your_db_password
+- DB_DATABASE=ordering_system_db
+- DB_USERNAME=your_db_username
+- DB_PASSWORD=your_db_password
 
 - Run migrations (if applicable):
-php artisan migrate
+- php artisan migrate
 
 - Start the backend server:
-php artisan serve
+- php artisan serve
 
 ###3. Frontend Setup (Vue.js)
-cd ../order-management-client
-npm install
-npm run dev
+
+- cd ../order-management-client
+- npm install
+- npm run dev
 
 ✅ Default URLs
+
   Frontend (Vite): http://localhost:5173
+  
   Backend (Laravel): http://localhost:8000
 
 📌 Notes
